@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="E01_OOP_Vehicle_v1.Classes.Airplane">
+    <Position X="4.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>rASEAAAIAJAAAAAwEAAAAoAAIAAEAAAAAhAAQgAAAAA=</HashCode>
+      <FileName>Classes\Airplane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="E01_OOP_Vehicle_v1.Classes.Car">
+    <Position X="7" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>qAQAAAFEAAACAwQAAAAAAsAAIAEEACAABABAAgAAEAA=</HashCode>
+      <FileName>Classes\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="E01_OOP_Vehicle_v1.Classes.Submarine">
+    <Position X="9.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ioQAAABCAAAAIAIAAACAAqAAICAFBAAAAACAQgEAAAA=</HashCode>
+      <FileName>Classes\Submarine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="E01_OOP_Vehicle_v1.Classes.Vehicle">
+    <Position X="7" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>iAQAAAAAAAAAEAAAAAAEAoAAMAAEgAAEAAgABgABAAA=</HashCode>
+      <FileName>Classes\Vehicle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="E01_OOP_Vehicle_v1.Classes.VehicleUtility">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\VehicleUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E01_OOP_Vehicle_v1.Program">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="E01_OOP_Vehicle_v1.Interfaces.IVehicle">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAAAAAAAAAAAAEAoAAMAAEgAAAAAgABgABAAA=</HashCode>
+      <FileName>Interfaces\IVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="E01_OOP_Vehicle_v1.Interfaces.IVehicleAir">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAJAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAA=</HashCode>
+      <FileName>Interfaces\IVehicleAir.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="E01_OOP_Vehicle_v1.Interfaces.IVehicleRoad">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABEAAAAAAQAAAAAAgAAAAEAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IVehicleRoad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="E01_OOP_Vehicle_v1.Interfaces.IVehicleWater">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAACAAAAAAAAAACAACAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Interfaces\IVehicleWater.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumAirVehicleBrand">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumAirVehicleModel">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAQAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumAirVehicleType">
+    <Position X="15.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAQAAAAAAAAIAAACAAAgAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumRoadVehicleBrand">
+    <Position X="17.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumRoadVehicleModel">
+    <Position X="13.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAECAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumRoadVehicleColor">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAgAAAAAAAAAAAACAAAAgAAAAAAIAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumRoadVehicleNumberOfDoors">
+    <Position X="15.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumWaterVehicleBrand">
+    <Position X="17.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumWaterVehicleModel">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAgACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E01_OOP_Vehicle_v1.Classes.EnumWaterVehicleType">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
