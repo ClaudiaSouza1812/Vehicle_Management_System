@@ -1,4 +1,4 @@
-﻿using D00_Utility;
+﻿using Utility;
 using E01_OOP_Vehicle_v1.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -69,7 +69,7 @@ namespace E01_OOP_Vehicle_v1.Classes
 
             do
             {
-                Utility.WriteMessage("Vehicle fabrication year: ");
+                RSGymUtility.WriteMessage("Vehicle fabrication year: ");
 
                 string answer = Console.ReadLine();
 
@@ -77,13 +77,13 @@ namespace E01_OOP_Vehicle_v1.Classes
 
                 if (!isYear)
                 {
-                    Utility.WriteMessage("Enter a valid year.", "\n", "\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage("Enter a valid year.", "\n", "\n");
+                    RSGymUtility.PauseConsole();
                 }
                 else if (!VehicleUtility.CheckVehicleYear(year))
                 {
-                    Utility.WriteMessage($"Year range between 1950 and {DateTime.Now.Year}.", "\n", "\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Year range between 1950 and {DateTime.Now.Year}.", "\n", "\n");
+                    RSGymUtility.PauseConsole();
                     isYear = false;
                 }
 

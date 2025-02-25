@@ -1,4 +1,4 @@
-﻿using D00_Utility;
+﻿using Utility;
 using E01_OOP_Vehicle_v1.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -51,7 +51,7 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         public override void CreateVehicle()
         {
-            Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+            RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
             #region RoadVehicleYear
 
@@ -105,9 +105,9 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
-                Utility.WriteMessage("Enter speed: ");
+                RSGymUtility.WriteMessage("Enter speed: ");
 
                 string answer = Console.ReadLine();
 
@@ -115,8 +115,8 @@ namespace E01_OOP_Vehicle_v1.Classes
 
                 if (!CheckCarSpeed(speed))
                 {
-                    Utility.WriteMessage($"Maximum speed: {MaxSpeed}km/h.");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Maximum speed: {MaxSpeed}km/h.");
+                    RSGymUtility.PauseConsole();
                     isSpeed = false;
                 }
 
@@ -131,9 +131,9 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
-                Utility.WriteMessage("Car registration: ");
+                RSGymUtility.WriteMessage("Car registration: ");
                 carRegistration = Console.ReadLine();
 
                 if (carRegistration != string.Empty)
@@ -142,8 +142,8 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage("You need to enter the car registration.", "\n", "\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage("You need to enter the car registration.", "\n", "\n");
+                    RSGymUtility.PauseConsole();
                 }
 
             } while (carRegistration == string.Empty);
@@ -151,11 +151,11 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         internal void ShowRoadVehicleBrand()
         { 
-            Utility.WriteTitle("Car Brands", "", "\n\n");
+            RSGymUtility.WriteTitle("Car Brands", "", "\n\n");
 
             foreach (EnumRoadVehicleBrand brand in Enum.GetValues(typeof(EnumRoadVehicleBrand)))
             {
-                Utility.WriteMessage($"{brand}", "", "\n");
+                RSGymUtility.WriteMessage($"{brand}", "", "\n");
             }
         }
 
@@ -165,11 +165,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
                 ShowRoadVehicleBrand();
 
-                Utility.WriteMessage("Write the Brand: ", "\n");
+                RSGymUtility.WriteMessage("Write the Brand: ", "\n");
 
                 string brand = Console.ReadLine();
 
@@ -181,19 +181,19 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid brand entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid brand entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isBrand);
         }
 
         internal void ShowRoadVehicleModel()
         {
-            Utility.WriteTitle("Road Vehicle Models", "", "\n\n");
+            RSGymUtility.WriteTitle("Road Vehicle Models", "", "\n\n");
 
             foreach (EnumRoadVehicleModel model in Enum.GetValues(typeof(EnumRoadVehicleModel)))
             {
-                Utility.WriteMessage($"{model}", "", "\n");
+                RSGymUtility.WriteMessage($"{model}", "", "\n");
             }
         }
 
@@ -203,11 +203,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
                 ShowRoadVehicleModel();
 
-                Utility.WriteMessage("Write the Model: ", "\n");
+                RSGymUtility.WriteMessage("Write the Model: ", "\n");
 
                 string model = Console.ReadLine();
 
@@ -219,8 +219,8 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid model entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid model entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isModel);
             
@@ -228,11 +228,11 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         internal void ShowRoadVehicleColor()
         {
-            Utility.WriteTitle("Road Vehicles color: ", "", "\n\n");
+            RSGymUtility.WriteTitle("Road Vehicles color: ", "", "\n\n");
 
             foreach (EnumRoadVehicleColor color in Enum.GetValues(typeof(EnumRoadVehicleColor)))
             {
-                Utility.WriteMessage($"{color}", "", "\n");
+                RSGymUtility.WriteMessage($"{color}", "", "\n");
             }
         }
 
@@ -242,11 +242,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
                 ShowRoadVehicleColor();
 
-                Utility.WriteMessage("Write the Color: ", "\n");
+                RSGymUtility.WriteMessage("Write the Color: ", "\n");
 
                 string color = Console.ReadLine();
 
@@ -258,19 +258,19 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid color entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid color entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isColor);
         }
 
         internal void ShowRoadVehicleDoors()
         {
-            Utility.WriteTitle("Road Vehicles Doors", "", "\n\n");
+            RSGymUtility.WriteTitle("Road Vehicles Doors", "", "\n\n");
 
             foreach (EnumRoadVehicleNumberOfDoors door in Enum.GetValues(typeof(EnumRoadVehicleNumberOfDoors)))
             {
-                Utility.WriteMessage($"{door}", "", "\n");
+                RSGymUtility.WriteMessage($"{door}", "", "\n");
             }
         }
 
@@ -280,11 +280,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create Road Vehicles", "", "\n\n");
+                RSGymUtility.WriteTitle("Create Road Vehicles", "", "\n\n");
 
                 ShowRoadVehicleDoors();
 
-                Utility.WriteMessage("Number Of Doors: ", "\n");
+                RSGymUtility.WriteMessage("Number Of Doors: ", "\n");
 
                 string doors = Console.ReadLine();
 
@@ -296,8 +296,8 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid number of doors entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid number of doors entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isDoor);
             
@@ -315,7 +315,7 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         public override void StartVehicle()
         {
-            Utility.WriteMessage("Starting the Car.", "\n", "\n");
+            RSGymUtility.WriteMessage("Starting the Car.", "\n", "\n");
         }
 
         // Polimorphism with Inheritance and Overloading 
@@ -324,7 +324,7 @@ namespace E01_OOP_Vehicle_v1.Classes
         {
             CurrentSpeed = speed;
 
-            Utility.WriteMessage($"Car in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"Car in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
         }
 
 
@@ -334,19 +334,19 @@ namespace E01_OOP_Vehicle_v1.Classes
         {
             CurrentSpeed = 50;
 
-            Utility.WriteMessage($"Car in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"Car in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
         }
 
 
         public void Honk()
         {
-            Utility.WriteMessage($"The Car is honking.", "", "\n");
+            RSGymUtility.WriteMessage($"The Car is honking.", "", "\n");
         }
 
 
         public void Park()
         {
-            Utility.WriteMessage($"The Car is parking, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"The Car is parking, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
 
             CurrentSpeed = 0;
         }
@@ -354,16 +354,16 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         public override void StopVehicle()
         {
-            Utility.WriteMessage($"The Car is stopping, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"The Car is stopping, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
 
             CurrentSpeed = 0;
         }
 
         public override void ListVehicle()
         {
-            Utility.WriteTitle("Car Information", "\n", "\n\n");
+            RSGymUtility.WriteTitle("Car Information", "\n", "\n\n");
 
-            Utility.WriteMessage($"{FullVehicle}", "", "\n");
+            RSGymUtility.WriteMessage($"{FullVehicle}", "", "\n");
         }
 
         #endregion

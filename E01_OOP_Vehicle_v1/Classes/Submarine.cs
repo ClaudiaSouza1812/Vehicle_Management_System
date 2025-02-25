@@ -1,4 +1,4 @@
-﻿using D00_Utility;
+﻿using Utility;
 using E01_OOP_Vehicle_v1.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -56,7 +56,7 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         public override void CreateVehicle()
         {
-            Utility.WriteTitle("Create Water Vehicle", "", "\n\n");
+            RSGymUtility.WriteTitle("Create Water Vehicle", "", "\n\n");
 
             #region WaterVehicleYear
 
@@ -97,9 +97,9 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create a Water Vehicle", "", "\n\n");
+                RSGymUtility.WriteTitle("Create a Water Vehicle", "", "\n\n");
 
-                Utility.WriteMessage("Pennant number: ");
+                RSGymUtility.WriteMessage("Pennant number: ");
                 pennantNumber = Console.ReadLine();
 
                 if (pennantNumber != string.Empty)
@@ -108,8 +108,8 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage("You need to enter the pennant number.", "\n", "\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage("You need to enter the pennant number.", "\n", "\n");
+                    RSGymUtility.PauseConsole();
                 }
 
             } while (pennantNumber == string.Empty);
@@ -117,11 +117,11 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         internal void ShowWaterVehicleType()
         { 
-            Utility.WriteTitle("Water Vehicle Types", "", "\n\n");
+            RSGymUtility.WriteTitle("Water Vehicle Types", "", "\n\n");
 
             foreach (EnumWaterVehicleType type in Enum.GetValues(typeof(EnumWaterVehicleType)))
             {
-                Utility.WriteMessage($"{type}", "", "\n");
+                RSGymUtility.WriteMessage($"{type}", "", "\n");
             }
         }
 
@@ -131,11 +131,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create a Water Vehicle", "", "\n\n");
+                RSGymUtility.WriteTitle("Create a Water Vehicle", "", "\n\n");
 
                 ShowWaterVehicleType();
 
-                Utility.WriteMessage("Write the Type: ", "\n");
+                RSGymUtility.WriteMessage("Write the Type: ", "\n");
 
                 string type = Console.ReadLine();
 
@@ -147,19 +147,19 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid type entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid type entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isType);
         }
 
         internal void ShowWaterVehicleBrand()
         {
-            Utility.WriteTitle("Water Vehicle Brands", "", "\n\n");
+            RSGymUtility.WriteTitle("Water Vehicle Brands", "", "\n\n");
 
             foreach (EnumWaterVehicleBrand brand in Enum.GetValues(typeof(EnumWaterVehicleBrand)))
             {
-                Utility.WriteMessage($"{brand}", "", "\n");
+                RSGymUtility.WriteMessage($"{brand}", "", "\n");
             }
         }
 
@@ -169,11 +169,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create a Water Vehicle", "", "\n\n");
+                RSGymUtility.WriteTitle("Create a Water Vehicle", "", "\n\n");
 
                 ShowWaterVehicleBrand();
 
-                Utility.WriteMessage("Write the Brand: ", "\n");
+                RSGymUtility.WriteMessage("Write the Brand: ", "\n");
 
                 string brand = Console.ReadLine();
 
@@ -185,19 +185,19 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid brand entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid brand entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isBrand);
         }
 
         internal void ShowWaterVehicleModel()
         {
-            Utility.WriteTitle("Water Vehicle Models", "", "\n\n");
+            RSGymUtility.WriteTitle("Water Vehicle Models", "", "\n\n");
 
             foreach (EnumWaterVehicleModel model in Enum.GetValues(typeof(EnumWaterVehicleModel)))
             {
-                Utility.WriteMessage($"{model}", "", "\n");
+                RSGymUtility.WriteMessage($"{model}", "", "\n");
             }
         }
 
@@ -208,11 +208,11 @@ namespace E01_OOP_Vehicle_v1.Classes
             do
             {
                 Console.Clear();
-                Utility.WriteTitle("Create a Water Vehicle", "", "\n\n");
+                RSGymUtility.WriteTitle("Create a Water Vehicle", "", "\n\n");
 
                 ShowWaterVehicleModel();
 
-                Utility.WriteMessage("Model: ", "\n");
+                RSGymUtility.WriteMessage("Model: ", "\n");
 
                 string model = Console.ReadLine();
 
@@ -223,8 +223,8 @@ namespace E01_OOP_Vehicle_v1.Classes
                 }
                 else
                 {
-                    Utility.WriteMessage($"Invalid model entered. Choose one of the options.", "\n", "\n\n");
-                    Utility.PauseConsole();
+                    RSGymUtility.WriteMessage($"Invalid model entered. Choose one of the options.", "\n", "\n\n");
+                    RSGymUtility.PauseConsole();
                 }
             } while (!isModel);
             
@@ -232,7 +232,7 @@ namespace E01_OOP_Vehicle_v1.Classes
 
         public override void StartVehicle()
         {
-            Utility.WriteMessage($"Starting the {WaterVehicleType}.", "\n", "\n");
+            RSGymUtility.WriteMessage($"Starting the {WaterVehicleType}.", "\n", "\n");
         }
 
         // Polimorphism with Inheritance and Override method
@@ -241,7 +241,7 @@ namespace E01_OOP_Vehicle_v1.Classes
         {
             CurrentSpeed = 60;
 
-            Utility.WriteMessage($"{WaterVehicleType} in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"{WaterVehicleType} in movement, speed from 0km/h to: {CurrentSpeed}km/h.", "", "\n");
         }
 
         public void Dive()
@@ -250,12 +250,12 @@ namespace E01_OOP_Vehicle_v1.Classes
             {
                 CurrentDepth = GetVehicleDepth();
 
-                Utility.WriteMessage($"Submarine is diving with a depth of {CurrentDepth} meters.", "", "\n");
+                RSGymUtility.WriteMessage($"Submarine is diving with a depth of {CurrentDepth} meters.", "", "\n");
             }
             else
             { 
-                Utility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot dive.", "", "\n");
-                Utility.PauseConsole();
+                RSGymUtility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot dive.", "", "\n");
+                RSGymUtility.PauseConsole();
             }
         }
 
@@ -269,9 +269,9 @@ namespace E01_OOP_Vehicle_v1.Classes
                 do
                 {
                     Console.Clear();
-                    Utility.WriteTitle("Create a Water Vehicle", "", "\n\n");
+                    RSGymUtility.WriteTitle("Create a Water Vehicle", "", "\n\n");
 
-                    Utility.WriteMessage("Depth: ", "\n");
+                    RSGymUtility.WriteMessage("Depth: ", "\n");
 
                     string answer = Console.ReadLine();
 
@@ -279,8 +279,8 @@ namespace E01_OOP_Vehicle_v1.Classes
 
                     if (!CheckVehicleDepth(depth))
                     {
-                        Utility.WriteMessage($"Maximum depth: {MaxDepth}km/h.");
-                        Utility.PauseConsole();
+                        RSGymUtility.WriteMessage($"Maximum depth: {MaxDepth}km/h.");
+                        RSGymUtility.PauseConsole();
                         isDepth = false;
                     }
 
@@ -289,8 +289,8 @@ namespace E01_OOP_Vehicle_v1.Classes
             else
             {
                 depth = 0.0;
-                Utility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot dive.", "", "\n");
-                Utility.PauseConsole();
+                RSGymUtility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot dive.", "", "\n");
+                RSGymUtility.PauseConsole();
             }   
             
             return depth;
@@ -311,27 +311,27 @@ namespace E01_OOP_Vehicle_v1.Classes
             {
                 CurrentDepth = 0.0;
 
-                Utility.WriteMessage($"The {WaterVehicleType} emerged and reached the surface successfully.", "", "\n");
+                RSGymUtility.WriteMessage($"The {WaterVehicleType} emerged and reached the surface successfully.", "", "\n");
             }
             else
             {
-                Utility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot emerge.", "", "\n");
-                Utility.PauseConsole();
+                RSGymUtility.WriteMessage($"The {WaterVehicleType} is not a submarine and cannot emerge.", "", "\n");
+                RSGymUtility.PauseConsole();
             }
         }
 
         public override void StopVehicle()
         {
-            Utility.WriteMessage($"The {WaterVehicleType} is stopping, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
+            RSGymUtility.WriteMessage($"The {WaterVehicleType} is stopping, speed from {CurrentSpeed}km/h to: 0km/h.", "", "\n");
 
             CurrentSpeed = 0;
         }
 
         public override void ListVehicle()
         {
-            Utility.WriteTitle($"{WaterVehicleType} Information", "\n", "\n\n");
+            RSGymUtility.WriteTitle($"{WaterVehicleType} Information", "\n", "\n\n");
 
-            Utility.WriteMessage($"{FullVehicle}", "", "\n");
+            RSGymUtility.WriteMessage($"{FullVehicle}", "", "\n");
         }
 
         #endregion

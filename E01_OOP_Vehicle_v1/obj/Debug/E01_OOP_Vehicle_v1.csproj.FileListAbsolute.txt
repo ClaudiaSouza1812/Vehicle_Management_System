@@ -1,0 +1,9 @@
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/bin/Debug/E01_OOP_Vehicle_v1.exe.config
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/bin/Debug/E01_OOP_Vehicle_v1.exe
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/bin/Debug/E01_OOP_Vehicle_v1.pdb
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/bin/Debug/Utility.dll
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/bin/Debug/Utility.pdb
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/E01_OOP_Vehicle_v1.csproj.CoreCompileInputs.cache
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/E01_OOP_Vehicle_v1.csproj.CopyComplete
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/E01_OOP_Vehicle_v1.exe
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/E01_OOP_Vehicle_v1.pdb
