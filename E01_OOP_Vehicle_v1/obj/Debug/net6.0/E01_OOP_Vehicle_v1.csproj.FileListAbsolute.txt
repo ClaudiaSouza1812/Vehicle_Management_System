@@ -1,0 +1,6 @@
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.csproj.AssemblyReference.cache
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.AssemblyInfoInputs.cache
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.AssemblyInfo.cs
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.csproj.CoreCompileInputs.cache
+/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/Debug/net6.0/E01_OOP_Vehicle_v1.sourcelink.json

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj": {}
+    "/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj": {}
   },
   "projects": {
-    "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj": {
+    "/Users/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj",
+        "projectUniqueName": "/Users/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj",
         "projectName": "Utility",
-        "projectPath": "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj",
-        "packagesPath": "/Users/claudiasouza/.nuget/packages/",
-        "outputPath": "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/obj/",
+        "projectPath": "/Users/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj",
+        "packagesPath": "/Users/Administrador/.nuget/packages/",
+        "outputPath": "/Users/Administrador/Documents/GitHub/Libraries/Utility/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/claudiasouza/.nuget/NuGet/NuGet.Config"
+          "/Users/Administrador/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -39,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -70,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj": {
+    "/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj",
+        "projectUniqueName": "/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj",
         "projectName": "E01_OOP_Vehicle_v1",
-        "projectPath": "/Volumes/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj",
-        "packagesPath": "/Users/claudiasouza/.nuget/packages/",
-        "outputPath": "/Volumes/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/",
+        "projectPath": "/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/E01_OOP_Vehicle_v1.csproj",
+        "packagesPath": "/Users/Administrador/.nuget/packages/",
+        "outputPath": "/Users/Administrador/Documents/GitHub/Vehicle_Management_System/E01_OOP_Vehicle_v1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/claudiasouza/.nuget/NuGet/NuGet.Config"
+          "/Users/Administrador/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj": {
-                "projectPath": "/Volumes/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj"
+              "/Users/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj": {
+                "projectPath": "/Users/Administrador/Documents/GitHub/Libraries/Utility/Utility.csproj"
               }
             }
           }
@@ -113,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net6.0": {
@@ -135,7 +135,7 @@
               "version": "[6.0.36, 6.0.36]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
               "version": "[6.0.36, 6.0.36]"
             },
             {
@@ -148,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
